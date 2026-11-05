@@ -1,73 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios.</title>
+    <title>Servicios | Pink Imp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
-    <nav>
-        <ul id="menu">
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./servicios.html">Servicios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-danger" href="./index.html">
+                Pink Imp
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="contenedor">
-        <h1>Pink Imp</h1>
-        <p>Personalizamos con amor!</p>
-        <img src="./img/logo.jpg" alt="logo" height="200px" width="300px">
-    </div>
+    <!-- Portada -->
+    <header class="container text-center py-5">
+        <h1 class="display-4 fw-bold text-danger">Pink Imp</h1>
+        <p class="lead">¡Personalizamos con amor!</p>
+        <img src="./img/logo.jpg" alt="Logo de Pink Imp" class="img-fluid rounded" style="max-height: 200px;">
+    </header>
 
-    <p><strong>¡Te damos la bienvenida a Pink Imp!</strong></p>
-    <p>Personalizamos tazas, termos, platos, llaveros y démas segun tus gustos; pueden ser estilos de anime, peliculas,
-        fotos y demás.</p>
+    <!-- Información de servicios -->
+    <main class="container py-4">
+        <section class="text-center mb-5">
+            <h2 class="h3 text-danger mb-3">
+                ¡Te damos la bienvenida a Pink Imp!
+            </h2>
+            <p class="lead">
+                Personalizamos tazas, termos, platos, llaveros y demás
+                productos según tus gustos. Puedes elegir diseños de anime,
+                películas, fotografías y mucho más.
+            </p>
+        </section>
 
-    <h2>Precios.</h2>
-    <table border="1" align="center" style="width: 600px; text-align: center;">
-        <caption>Precios.</caption>
-        <thead>
-            <tr>
-                <th>Servicio.</th>
-                <th>Cantidad de imagenes.</th>
-                <th>Precio.</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Taza y termos.</td>
-                <td>4</td>
-                <td>$30.000 unidad</td>
-            </tr>
-            <tr>
-                <td>Platos.</td>
-                <td>4</td>
-                <td>$40.000 unidad</td>
-            </tr>
-            <tr>
-                <td>Llaveros y otros.</td>
-                <td>1</td>
-                <td>$20.000 unidad</td>
-            </tr>
-        </tbody>
-    </table>
+        <!-- Tabla de precios -->
+        <section class="mb-5">
+            <h2 class="text-center text-danger mb-4">Nuestros precios</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover text-center align-middle">
+                    <caption class="caption-top text-center fw-bold">
+                        Lista de precios de nuestros servicios
+                    </caption>
+                    <thead class="table-danger">
+                        <tr>
+                            <th scope="col">Servicio</th>
+                            <th scope="col">Cantidad de imágenes</th>
+                            <th scope="col">Precio</th>
+                        </tr>
+                    </thead>
 
+                    <tbody>
+                        <tr>
+                            <td>Tazas y termos</td>
+                            <td>4</td>
+                            <td>$30.000 unidad</td>
+                        </tr>
+                        <tr>
+                            <td>Platos</td>
+                            <td>4</td>
+                            <td>$40.000 unidad</td>
+                        </tr>
+                        <tr>
+                            <td>Llaveros y otros</td>
+                            <td>1</td>
+                            <td>$20.000 unidad</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <div class="contenedor">
-        <button><a href="./contacto.html">Comprar:</a></button>
-        <button><a href="./index.html">Volver a la página principal.</a></button>
-    </div>
+        <!-- Botones de navegación -->
+        <section class="text-center py-4">
+            <a href="./contacto.html" class="btn btn-danger me-2 mb-2">Comprar</a>
 
-    <div>
-        <footer class="sitio-footer">
-            <p>2026 Pink Imp. <em>Todos los derechos reservados.</em></p>
-        </footer>
-    </div>
+            <a href="./index.html" class="btn btn-outline-danger mb-2">Volver a la página principal</a>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-light text-center py-3 mt-4">
+        <p class="mb-0">2026 Pink Imp.<em>Todos los derechos reservados.</em></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
 </body>
 
 </html>
